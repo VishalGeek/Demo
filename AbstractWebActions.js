@@ -4,7 +4,7 @@ var abstractActions = function() {
 
 		waitTime = waitTime || 2000;
 		var EC = protractor.ExpectedConditions;
-		var deferred = protractor.promise.defer();
+		var deferred = protractor.promise.defer(); //Comment testing
 
 		browser.wait(EC.visibilityOf(elem), waitTime).then(function() {
 			deferred.fulfill(elem);
